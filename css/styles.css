@@ -246,7 +246,6 @@ color:#F89F9F;
 	float: right;
 }
 .header {
-	position: fixed;
 	width: 100%;
 	background:transparent;
 	z-index: 50;
