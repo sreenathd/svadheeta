@@ -468,7 +468,7 @@
         </div>
       </div>
       <div class="row mrgn30">
-        <form method="post" action="" id="contactfrm" role="form">
+        <!-- <form method="post" action="" id="contactfrm" role="form">
           <div class="col-sm-12">
             <div class="form-group">
               <label for="name">Name</label>
@@ -485,7 +485,22 @@
             </div>
             <div class="result"></div>
           </div>
-        </form>
+        </form> -->
+					<form action="https://postmail.invotes.com/send"
+						method="post" id="email_form">
+
+						<input type="text" name="subject" placeholder="Subject" />
+						<textarea name="text" placeholder="Message"></textarea>
+						<!-- replace value with your access token -->
+						<input type="hidden" name="access_token" value="{vitsbegti3a2i5qhwbq2pkx7}" />
+
+						<input type="hidden" name="success_url"
+							value=".?message=Email+Successfully+Sent%21&isError=0" />
+						<input type="hidden" name="error_url"
+							value=".?message=Email+could+not+be+sent.&isError=1" />
+
+						<input id="submit_form" type="submit" value="Send" />
+					</form>
       </div>
     </div>
     <!--/.container--> 
